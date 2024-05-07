@@ -1,0 +1,26 @@
+#include <stdio.h>
+ 
+int main()
+{
+    int n,i=0,x1,x2,m,result;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d %d %d",&x1,&x2,&m);
+        if(x2<x1)
+        {
+            printf("%d\n",x1);
+        }
+        else if(m>(x2-x1))
+        {
+            printf("%d\n",x2);
+        }
+        else
+        {
+            result=(2*x2)-m-x1;
+            printf("%d\n", result);
+        }
+        
+    }
+    return 0;
+}
